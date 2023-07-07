@@ -8,6 +8,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 public class DynamicJson {
+    //Add some scenarios
     @Test
     public static void addBook() {
         RestAssured.baseURI = "http://216.10.245.166";
