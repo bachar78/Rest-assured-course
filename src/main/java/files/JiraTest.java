@@ -22,7 +22,7 @@ public class JiraTest {
                 when().post("/rest/auth/1/session").
                 then().log().all().extract().response().asString();
 
-        String expectedMessage = "This is an comment for Rest Assured Intellij Course";
+        String expectedMessage = "This is an comment for Rest Assured Intellij Course for section 8";
 //Add comment
         String responseComment = given().pathParam("key", "10003").log().all().
                 header("Content-Type", "application/json").
