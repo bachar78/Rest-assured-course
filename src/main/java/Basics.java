@@ -17,6 +17,9 @@ public class Basics {
         //Base URI
         RestAssured.baseURI = "https://rahulshettyacademy.com";
 
+        //To get the static data from a file, to convert the content of the file into String => content to Byte -> Byte to String
+
+
         //Post Scenario
         String response = given().relaxedHTTPSValidation().log().all().queryParam("key", "qaclick123")
                 .header("Content-Type", "application/json")
@@ -49,7 +52,6 @@ public class Basics {
         String getUpdatedAddress = getPlaceJson.getString("address");
         //Junit and Testng
         Assert.assertEquals(updateNewAddress, getUpdatedAddress);
-
 
     }
 }
