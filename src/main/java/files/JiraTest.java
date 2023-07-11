@@ -15,7 +15,7 @@ public class JiraTest {
 
         //Login Scenario
         SessionFilter session = new SessionFilter();
-        String responseLogin = given().header("Content-Type", "application/json")
+        given().header("Content-Type", "application/json")
                 .body("{ \"username\": \"Bachar_Daowd\", \"password\": \"Shams1978\" }")
                 .log().all()
                 .filter(session).
